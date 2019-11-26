@@ -10,7 +10,6 @@
 // 		home.disabled = false;}
 //
 // 	}
-
 var home = $("#home")
 $(document).ready(function (){
 			$('#useBilling').change(function (){
