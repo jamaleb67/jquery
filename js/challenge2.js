@@ -11,12 +11,23 @@
 //
 // 	}
 
-
+var home = $("#home")
 $(document).ready(function (){
 			$('#useBilling').change(function (){
+				var home = $("#home");
+			  var billing = $("#billing");
 				console.log("selected");
+				if (this.checked){
+					$("#home").val($("#billing").val());
+					$("#home").prop("disabled", true);
+				}
+				else{
+					$("#home").val("");
+					$("#home").prop("disabled", false);
+				}
 				// $('#home').toggle();
-				$("#home").attr("#billing");
+				// var home = $(this).attr('billing');
+
 
 			});
 		});
